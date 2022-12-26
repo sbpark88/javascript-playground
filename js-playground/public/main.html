@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>메인</title>
+  <style>
+      div {
+          margin: 10px;
+      }
+  </style>
+</head>
+<body>
+<h1>메인 페이지</h1>
+<div>
+  <button id="playground1">Playground 1</button>
+</div>
+<div>
+  <button id="playground2">Playground 2</button>
+</div>
+<div>
+  <button id="playground3">Playground 3</button>
+</div>
+</body>
+<script>
+  window.onload = () => {
+    document.getElementById("playground1").addEventListener("click", () => {
+      location.href = `${location.origin}/playground1`;
+    }, false)
+    document.getElementById("playground2").addEventListener("click", () => {
+      location.href = `${location.origin}/playground2`;
+    }, false)
+    document.getElementById("playground3").addEventListener("click", () => {
+      location.href = `${location.origin}/playground3`;
+    }, false)
+  }
+</script>
+</html>
